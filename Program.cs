@@ -31,6 +31,15 @@
             bn.TravesreInorder(bn.root);
             Console.WriteLine();
 
+            Console.WriteLine("Enter the node value which u want to search:");
+            int s = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Searching the element :");
+            bool t = bn.Search(s);
+            if (t)
+                Console.WriteLine("value is present:");
+            else
+                Console.WriteLine("value is not present");
+
         }
     }
 }
